@@ -130,79 +130,80 @@
     </section>
 
     <!-- VENTAJAS + FORMULARIO -->
-    <section id="vendedores" class="section section-sellers">
-      <div class="sellers-info">
-        <h2>Forma parte de nuestro equipo</h2>
-        <ul>
-          <li>Tortillas de harina con sabor casero y constante calidad.</li>
-          <li>Abasto desde nuestra planta en Chilchota.</li>
-          <li>Precios preferenciales para quienes forman parte de la ruta.</li>
-          <li>Apoyo para crecer tu ruta y tus ingresos.</li>
-        </ul>
-        <p class="zones-note">
-          <strong>Zonas de interés:</strong> localidades y comunidades cercanas a Chilchota.  
-          Cuéntanos dónde vives y revisamos si podemos llegar contigo.
-        </p>
-        <p class="zones-note">
-          <strong>Apoyemos los negocios locales:</strong> juntos fortalecemos tienditas, puestos de comida
-          y familias de la región.
-        </p>
-      </div>
-
-      <div class="sellers-form">
-        <h3>Solicita ser vendedor</h3>
-        <p>Llena el formulario y te contactamos por WhatsApp para platicar los detalles.</p>
-        <form id="solicitud-form">
-          <label>
-            Nombre completo
-            <input type="text" name="nombre" id="nombre" required />
-          </label>
-          <label>
-            Teléfono (WhatsApp)
-            <input type="tel" name="telefono" id="telefono" required />
-          </label>
-          <label>
-            Localidad
-            <input type="text" name="localidad" id="localidad" required />
-          </label>
-
-          <fieldset class="paquetes-fieldset">
-            <legend>Paquete que te interesa</legend>
-            <label>
-              <input type="radio" name="paquete" class="radiob" value="Paquete Chico (150 paquetes)" required />
-              Paquete Chico (150)
-            </label>
-            <label>
-              <input type="radio" name="paquete" value="Paquete Mediano (200 paquetes)" />
-              Paquete Mediano (200)
-            </label>
-            <label>
-              <input type="radio" name="paquete" value="Paquete Grande (250 paquetes)" />
-              Paquete Grande (250)
-            </label>
-            <label>
-              <input type="radio" name="paquete" value="Paquete personalizado (a partir de 150 paquetes)" />
-              Paquete personalizado (desde 150)
-            </label>
-          </fieldset>
-
-          <label>
-            Comentarios (horario, experiencia, cómo te gustaría tu pedido, etc.)
-            <textarea name="comentarios" id="comentarios" rows="3"></textarea>
-          </label>
-
-          <button type="button" id="enviar-btn" class="btn-primary">
-            Enviar solicitud por WhatsApp
-          </button>
-
-          <p class="small-note">
-            *En el mensaje te confirmamos disponibilidad, precios finales y formas de pago
-            (efectivo, transferencia o pago en línea).
+    <div class="center">
+      <section id="vendedores" class="section section-sellers">
+        <div class="sellers-info">
+          <h2>Forma parte de nuestro equipo</h2>
+          <ul>
+            <li>Tortillas de harina con sabor casero y constante calidad.</li>
+            <li>Abasto desde nuestra planta en Chilchota.</li>
+            <li>Precios preferenciales para quienes forman parte de la ruta.</li>
+            <li>Apoyo para crecer tu ruta y tus ingresos.</li>
+          </ul>
+          <p class="zones-note">
+            <strong>Zonas de interés:</strong> localidades y comunidades cercanas a Chilchota.  
+            Cuéntanos dónde vives y revisamos si podemos llegar contigo.
           </p>
-        </form>
-      </div>
-    </section>
+          <p class="zones-note">
+            <strong>Apoyemos los negocios locales:</strong> juntos fortalecemos tienditas, puestos de comida
+            y familias de la región.
+          </p>
+        </div>
 
+        <div class="sellers-form">
+          <h3>Solicita ser vendedor</h3>
+          <p>Llena el formulario y te contactamos por WhatsApp para platicar los detalles.</p>
+          <form id="solicitud-form">
+            <label>
+              Nombre completo
+              <input type="text" name="nombre" id="nombre" required />
+            </label>
+            <label>
+              Teléfono (WhatsApp)
+              <input type="tel" name="telefono" id="telefono" required />
+            </label>
+            <label>
+              Localidad
+              <input type="text" name="localidad" id="localidad" required />
+            </label>
+
+            <fieldset class="paquetes-fieldset">
+              <legend>Paquete que te interesa</legend>
+              <input type="radio" class="size" name="paquete" class="radiob" value="Paquete Chico (150 paquetes)" required />
+              <label>
+                Paquete Chico (150)
+              </label>
+              <input type="radio" class="size" name="paquete" value="Paquete Mediano (200 paquetes)" />
+              <label>
+                Paquete Mediano (200)
+              </label>
+              <input type="radio" class="size" name="paquete" value="Paquete Grande (250 paquetes)" />
+              <label>
+                Paquete Grande (250)
+              </label>
+              <input type="radio" class="size" name="paquete" value="Paquete personalizado (a partir de 150 paquetes)" />
+              <label>
+                Paquete personalizado (desde 150)
+              </label>
+            </fieldset>
+
+            <label>
+              Comentarios (horario, experiencia, cómo te gustaría tu pedido, etc.)
+              <textarea name="comentarios" id="comentarios" rows="3"></textarea>
+            </label>
+
+            <button type="button" id="enviar-btn" class="btn-primary">
+              Enviar solicitud por WhatsApp
+            </button>
+
+            <p class="small-note">
+              *En el mensaje te confirmamos disponibilidad, precios finales y formas de pago
+              (efectivo, transferencia o pago en línea).
+            </p>
+          </form>
+        </div>
+      </section>
+    </div>
     <!-- CONTACTO -->
     <section id="contacto" class="section section-contact">
       <h2>Contacto</h2>

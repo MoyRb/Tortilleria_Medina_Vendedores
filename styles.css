@@ -244,8 +244,10 @@ body {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
 }
+
+
 
 .sellers-info ul {
   margin-top: 0.75rem;
@@ -383,20 +385,44 @@ textarea:focus {
 
 /* Responsivo */
 @media (max-width: 900px) {
+  
+ /*acomoda en una columna todo cuando se esta en dispositivo movil*/
   .section-sellers {
     grid-template-columns: 1fr;
     margin-left: 0;
-    width: 350px;
   }
+
+  /*acomoda los botones para que quede en columnas y centrados*/
   .paquetes-fieldset {
-  border: 1px solid #d1b38c;
-  border-radius: 0.5rem;
-  padding: 0.75rem;
-  margin-bottom: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .paquetes-fieldset legend {
+    grid-column: 1 / -1; 
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  
+  .paquetes-fieldset input[type="radio"] {
+    width: 20px; 
+    height: 20px;
+    flex-shrink: 0; 
+    flex-grow: 0;
+    margin-left: 40px;
+    margin-top: 2px;
+  }
+
+   /*acomoda el texto y el formulario para que queden centrados*/
+  .center {
+    display: grid;
+    grid-template-columns:.5r 1fr .5fr;
+  }
+
+  .section-sellers {
+    grid-column: 2 / 3;
+  }
 }
 
 @media (max-width: 720px) {
